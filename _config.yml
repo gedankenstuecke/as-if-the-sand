@@ -1,21 +1,21 @@
 # Site settings
-title: PHOTORAMA
+title: As if the sand…
 email: ""
-description: "Photo Journal"
-url: "https://sunbliss.github.io"
-baseurl: "/photorama"
+description: "…was made of stone."
+url: "https://tzovar.as"
+baseurl: "/as-if-the-sand"
 facebook_username: ""
 twitter_username: ""
-instagram_username: ""
-github_username:  ""
+instagram_username: "gedankenstuecke"
+github_username:  "gedankenstuecke"
 deviantart_username: ""
-flickr_username: ""
+flickr_username: "gedankenstuecke"
 discus_shortname: ""
 share: true
 
 # Owner/author information
 owner:
-  name:   photorama
+  name:   Eugenia Covernton & Bastian Greshake Tzovaras
   avatar: avatar.png
   favicon: favicon.ico
   info: photography website template
@@ -27,7 +27,7 @@ owner:
 # Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
 #
 comments :
-  provider : disqus
+  provider : false
   disqus :
     short_name : ""
 
