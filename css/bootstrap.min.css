@@ -370,6 +370,11 @@ th {
   src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'), url(../fonts/glyphicons-halflings-regular.woff) format('woff'), url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'), url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
 }
 
+@font-face {
+  font-family: 'JosefinSlab';
+  src: url(../fonts/JosefinSlab-VariableFont_wght.ttf);
+}
+
 .glyphicon {
   position: relative;
   top: 1px;
@@ -5254,7 +5259,8 @@ textarea.input-group-sm>.input-group-btn>.btn {
   height: 50px;
   padding: 15px 15px;
   font-size: 18px;
-  line-height: 20px
+  line-height: 20px;
+  font-family: 'JosefinSlab';
 }
 
 .navbar-brand:focus,
@@ -5506,7 +5512,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-default .navbar-brand {
-  color: #777
+  color: white
 }
 
 .navbar-default .navbar-brand:focus,
