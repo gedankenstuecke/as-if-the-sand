@@ -22,11 +22,11 @@ h6 {
 }
 
 .title-text {
-  text-shadow: 2px 2px #000000;
+  text-shadow: 2px 2px px #000000;
 }
 
 a {
-  color: #760824;
+  color: #0085a1;
   transition: color .4s;
   text-decorarion: none;
 }
@@ -411,3 +411,7 @@ body {
  color: black;
 }
 
+.author-name {
+  font-family: 'JosefinSlab';
+  font-size: 130%
+}

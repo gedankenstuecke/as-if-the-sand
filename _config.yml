@@ -1,11 +1,10 @@
 # Site settings
-title: As if the sand…
+title: As if the sand were stone
 email: "bgreshake@googlemail.com,eugecovernton@gmail.com?subject=Contact As if the sand..."
-description: "…was made of stone."
+description: "A documentary photography rproject"
 url: "https://tzovar.as"
 baseurl: "/as-if-the-sand"
 instagram_username: "gedankenstuecke"
-github_username:  "gedankenstuecke"
 flickr_username: "gedankenstuecke"
 share: true
 
@@ -13,7 +12,7 @@ share: true
 owner:
   name:   Eugenia Covernton & Bastian Greshake Tzovaras
   avatar: avatar.png
-  favicon: favicon.ico
+  favicon: favicon.svg
   info: photography website template
 
 # Settings for comments helper
