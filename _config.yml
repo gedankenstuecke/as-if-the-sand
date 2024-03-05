@@ -29,7 +29,7 @@ comments :
 # Internal nav
 nav:
   - ZINE: "zine/"
-  - GALLERY: "gallery/"  
+  - GALLERY: "gallery/zine-n1/"  
   - ABOUT: "about/"
   
 

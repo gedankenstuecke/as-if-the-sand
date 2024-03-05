@@ -1,0 +1,126 @@
+---
+layout: page
+title: "Gallery"
+description: "Galería de fotos"
+active: gallery
+header-img: "img/gallery-bg.jpg"
+album-title: "Sep 2023 – Prov. Santa Fe & Buenos Aires"
+images:
+- image_path: /gallery/archive/z-n1/zn1.jpg
+  caption: Cañada del Ucle
+  copyright: pop. 941
+- image_path: /gallery/archive/z-n1/zn2.jpg
+  caption: María Teresa
+  copyright: pop. 3919
+- image_path: /gallery/archive/z-n1/zn3.jpg
+  caption: Wheelwright
+  copyright: pop. 9706
+- image_path: /gallery/archive/z-n1/zn4.jpg
+  caption: Chapuy
+  copyright: pop. 671
+- image_path: /gallery/archive/z-n1/zn5.jpg
+  caption: Hughes
+  copyright: pop. 4769
+- image_path: /gallery/archive/z-n1/zn6.jpg
+  caption: Diego de Alvear
+  copyright: pop. 1999
+- image_path: /gallery/archive/z-n1/zn7.jpg
+  caption: Christophersen
+  copyright: pop 731
+- image_path: /gallery/archive/z-n1/zn8.jpg
+  caption: Teodelina
+  copyright: pop. 5933
+- image_path: /gallery/archive/z-n1/zn9.jpg
+  caption: La Angelita 
+  copyright: pop. 265
+- image_path: /gallery/archive/z-n1/zn10.jpg
+  caption: Elortondo
+  copyright: pop. 6064 
+- image_path: /gallery/archive/z-n1/zn11.jpg
+  caption: San Francisco de Santa Fe
+  copyright: pop. 416
+- image_path: /gallery/archive/z-n1/zn12.jpg
+  caption: Melincué
+  copyright: pop. 2228
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+</head>
+
+    <body>
+ 
+	<section id="content" role="main">
+		<div class="wrapper">
+			<!-- Gallery __-->
+			<div class="gallery masonry-gallery">
+		
+{% for image in page.images %}  		
+
+				<figure class="gallery-item">
+					<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"></a>
+						
+					</header>	
+					<figcaption class='gallery-caption'>
+						<div class="entry-summary title-text" id="{{ image.caption }}">
+							<h3>{{image.caption}}</h3>
+							<p>{{image.copyright}}</p>
+						</div>
+					</figcaption>
+				</figure>
+				
+{% endfor %}
+			</div>
+  <p>
+    See <a href="https://flickr.com/photos/{{ site.flickr_username }}" data-toggle="tooltip" title="Flickr">
+      high-resolution images on <i class="fa fa-flickr"></i> Flickr
+    </a>.
+  </p>
+		</div><!-- END .wrapper -->
+	</section>
+
+<!-- jQuery -->    
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- include image popups -->
+<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + ',&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.baseurl }}/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.baseurl }}/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+
+    
+</body></html>
