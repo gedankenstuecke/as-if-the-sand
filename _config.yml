@@ -28,9 +28,10 @@ comments :
 
 # Internal nav
 nav:
-  - ABOUT: "about/"
+  - ZINE: "zine/"
   - GALLERY: "gallery/"  
-  - JOURNAL: "journal/"
+  - ABOUT: "about/"
+  
 
 # All translation keys
 translations:
