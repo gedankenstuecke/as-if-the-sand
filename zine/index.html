@@ -6,8 +6,6 @@ active: zine
 header-img: "img/writing-bg.jpg"
 ---
 
-
-
 <blockquote>
     Buy their zine, it's really good.
     <div style="font-family: 'JosefinSlab'">– Jorge Luis Borges (attributed)</div>
@@ -19,98 +17,6 @@ header-img: "img/writing-bg.jpg"
 Zine text will go here
 </p>
 
-<style>
-.image-stack {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.image-stack__item--bottom {
-  grid-column: 1 / span 4;
-  grid-row: 1;
-  z-index: 1;
-}
-
-.image-stack__item--center {
-  grid-row: 1;
-  grid-column: 3 / span 4;
-  padding-top: 30%;
-  z-index: 2;
-}
-
-.image-stack__item--top {
-  grid-row: 1;
-  grid-column: 6 / span 7;
-  z-index: 3;
-}
-
-.image-hidden {
-    transform: scale(0);
-}
-
-img {
-  width: 100%;
-  display: block;
-}
-
-.area_img1 {
-  position: absolute;
-  left: 14%;
-  top:25%;
-  width: 5%;
-  height: 10%;
-  border: 1px solid red;
-  z-index: 4;
-} 
-
-.area_img2 {
-  position: absolute;
-  left: 26.5%;
-  top:82%;
-  width: 10%;
-  height: 12%;
-  border: 1px solid red;
-  z-index: 5;
-} 
-
-#area1:hover, #area2:hover {
-    opacity:0.2;
-}
-
-</style>
-
-<script>
-    function toggleCenter() {
-        var element = document.getElementById("image-center");
-        element.classList.toggle("image-hidden");
-    } 
-
-    function toggleTop() {
-            var element = document.getElementById("image-top");
-            element.classList.toggle("image-hidden");
-        } 
-</script>
-
-
-<div class="image-stack">
-    <div class="image-stack__item image-stack__item--bottom">
-        <img src="{{ site.baseurl }}/img/argentina-256.png" alt="">
-        <a id="area1" class="area_img1" onclick="toggleCenter()"></a>
-    </div>
-    <div id='image-center' class="image-stack__item image-stack__item--center image-hidden">
-        <img src="{{ site.baseurl }}/img/santa_fe-256.png" alt="">
-        <a id="area1" class="area_img2" onclick="toggleTop()"></a>
-    </div>
-    <div id='image-top' class="image-stack__item image-stack__item--top image-hidden">
-        <img src="{{ site.baseurl }}/img/gen-lopez-256.png" alt="">
-    </div>
-</div>
-
-
-<p>
-    Map shenenigans
-</p>
 <p style="text-align: right;font-family: 'JosefinSlab'">
     Eugenia Covernton & Bastian Greshake Tzovaras
 </p>

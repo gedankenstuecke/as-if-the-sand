@@ -6,7 +6,8 @@ active: about
 header-img: "img/about-bg.jpg"
 ---
 
-
+<script src="{{ site.baseurl }}/js/about.js "></script>
+<link href="{{ site.baseurl }}/css/about.css" rel="stylesheet" />
 
 <blockquote>
     Nothing is built on stone, all is built on sand, but we must build <b>as if the sand were stone</b>.
@@ -28,6 +29,33 @@ the Pampa in the places where new stations were being built. But, with a shift f
 from rail to road, many of these train lines stopped their service starting in the 1930s. This change in transportation,
 alongside the general growth in industrialization led to many of these former boom towns shrink to become small hamlets,
 as people moved to larger and more connected cities.
+</p>
+<div class="image-stack">
+    <div class="image-stack__item image-stack__item--bottom">
+        <img src="{{ site.baseurl }}/img/argentina-256.png" alt="">
+        <a id="area1" class="area_img1" onclick="toggleCenter()"></a>
+        <div class="label-bottom">Argentina</div>
+    </div>
+    <div id='image-center' class="image-stack__item image-stack__item--center image-hidden">
+        <img src="{{ site.baseurl }}/img/santa_fe-256.png" alt="">
+        <a id="area2" class="area_img2" onclick="toggleTop()"></a>
+        <div class="label-center">Santa Fe</div>
+    </div>
+    <div id='image-top' class="image-stack__item image-stack__item--top image-hidden">
+        <img src="{{ site.baseurl }}/img/gen-lopez-256.png" alt="">
+        <div class="label-top">General López</div>
+
+    </div>
+</div>
+<p>
+    Evidence for the impact of the railroad development – and the subsequent boom town creation – can still be seen
+    despite the shrinking, by looking at population maps like the ones above.
+    This is particularly striking when zooming into these maps, such as moving from Argentina into the province of
+    <em>Santa Fe</em>.
+    Or even further in, into the department of <em>General López</em> – where many of our images were made. Then, we can
+    clearly see
+    those settlements of different sizes, but that occur in very regularly spaced intervals in straight lines that move
+    diagonally throughout the maps.
 </p>
 <p>
 Today, many of these villages are at the risk of becoming extinct. Which doesn’t keep the remaining population from
