@@ -6,6 +6,9 @@ active: about
 header-img: "img/about-bg.jpg"
 ---
 
+<script src="{{ site.baseurl }}/js/about.js "></script>
+<link href="{{ site.baseurl }}/css/about.css" rel="stylesheet" />
+
 <blockquote>
     Nada se edifica sobre la piedra, todo sobre la arena, pero nuestro deber es edificar <b>como si fuera piedra la arena</b>.
     <div style="font-family: 'JosefinSlab'">– Jorge Luis Borges</div>
@@ -28,6 +31,30 @@ transporte -de mercancías y pasajeros- del ferrocarril a las rutas, muchas de e
 funcionar a partir de la década de 1930. El cambio en el transporte, junto con el crecimiento general de la
 industrialización, hizo que muchos de estos antiguos pueblos se redujeran hasta convertirse en pequeños asentamientos a
 medida que la gente se trasladaba a ciudades más grandes y mejor comunicadas.
+</p>
+<div class="image-stack">
+    <div class="image-stack__item image-stack__item--bottom">
+        <img src="{{ site.baseurl }}/img/argentina-256.png" alt="">
+        <a id="area1" class="area_img1" onclick="toggleCenter()"></a>
+        <div class="label-bottom">Argentina</div>
+    </div>
+    <div id='image-center' class="image-stack__item image-stack__item--center image-hidden">
+        <img src="{{ site.baseurl }}/img/santa_fe-256.png" alt="">
+        <a id="area2" class="area_img2" onclick="toggleTop()"></a>
+        <div class="label-center">Santa Fe</div>
+    </div>
+    <div id='image-top' class="image-stack__item image-stack__item--top image-hidden">
+        <img src="{{ site.baseurl }}/img/gen-lopez-256.png" alt="">
+        <div class="label-top">General López</div>
+
+    </div>
+</div>
+<p>
+    El impacto del desarrollo del ferrocarril - y la subsiguiente creación de poblados - aún puede apreciarse al observar
+    mapas de población como los que aparecen arriba. Esto es particularmente llamativo cuando se hace zoom en estos mapas,
+    como al pasar del mapa de Argentina <a onclick="toggleCenter()"></a>al de la provincia de <em>Santa Fe</em></a> o incluso más allá, 
+    haciendo <a onclick="toggleTop()">zoom en el departamento de <em>General López</em></a> -donde se hicieron muchas de nuestras fotos. Allí podemos ver claramente que los asentamientos varían
+    en tamaño pero ocurren en intervalos muy regulares, formando líneas (casi) rectas que atraviesan los mapas.
 </p>
 <p>
 Hoy, muchos de estos pueblos corren el riesgo de extinguirse. Lo cual no impide que la población restante se
