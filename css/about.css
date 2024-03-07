@@ -69,10 +69,10 @@ img {
 .area_img1 {
     position: absolute;
     left: 14%;
-    top: 25%;
+    top: 23%;
     width: 5%;
-    height: 10%;
-    border: 1px solid red;
+    height: 13%;
+    border: 2px solid red;
     z-index: 4;
 }
 
@@ -82,11 +82,12 @@ img {
     top: 82%;
     width: 10%;
     height: 12%;
-    border: 1px solid red;
+    border: 2px solid red;
     z-index: 5;
 }
 
 #area1:hover,
 #area2:hover {
-    opacity: 0.2;
+    opacity: 0.8;
+    border: 2px solid black;
 }
