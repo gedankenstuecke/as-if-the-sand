@@ -1,0 +1,24 @@
+img {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-stack {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.image-stack__item--left {
+    grid-column: 1 / span 6;
+    grid-row: 1;
+    z-index: 1;
+}
+
+.image-stack__item--right {
+    grid-column: 7 / span 6;
+    grid-row: 1;
+    z-index: 1;
+}
